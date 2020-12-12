@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>display</title>
+<style>
+    body{
+
+    background: url(/static/images/a.jpg);
+    }
+    .tab
+    {
+        background-color: rgb(34, 32, 32,0.8);
+        border-radius: 4em;    
+
+    }
+    .center
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+td
+{
+    color: white;
+    text-align: right;
+    padding: 2em;
+}
+th
+{
+    color: rgb(248, 181, 11);
+    text-align: left;
+    padding: 2em;
+
+}
+.h2
+    {
+        color: white;
+        text-align: center;
+    }
+h1{
+    color: rgb(248, 181, 11);
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 0.5em;
+
+}
+
+</style>
+{% endblock %}
+
+{% block body %} 
+<div class="container">
+    <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-6">
+                <div class="tab">
+                    <h1>Thank you for submitting Attendance</h1><br><br>
+                    <h2 class="h2">Your Details</h2><br>
+                    <table class="center">
+                        <tr>
+                            <th><h2>Name</h2></th><td><h2>{{det.name}}</h2></td>
+                        </tr>
+                        <tr>
+                            <th><h2>Phone No</h2></th><td><h2>{{det.pno}}</h2></td>
+                        </tr>
+                        <tr>
+                            <th><h2>University</h2></th><td><h2>{{det.uni}}</h2></td>
+                        </tr>
+                        <tr>
+                            <th><h2>Roll No</h2></th><td><h2>{{det.rollno}}</h2></td>
+                        </tr>
+                        <tr>
+                            <th><h2>Time</h2></th><td><h2>{{det.time}}</h2></td>
+                        </tr>
+                    </table>
+            </div>
+            </div>
+            <div class="col-lg-3">
+            </div>
+    </div>
+</div>
+    
+    
+{% endblock %}

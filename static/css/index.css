@@ -1,0 +1,21 @@
+body
+{
+background-color: rgb(10, 10, 10,0.9);
+}
+.container
+{
+	text-align: center;
+	margin-top: 10%;
+	color: white;
+}
+h1
+{
+	font-size: 300%;
+	font-weight: 300%;
+	color: lightgreen;
+}
+.text-center
+{
+	width: 30%;
+	margin-left: 33%;
+}
